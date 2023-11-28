@@ -1,0 +1,1008 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "2";
+    src: url(./fonts/PPWoodland-Regular.ttf);
+}
+
+@font-face {
+    font-family: "1";
+    src: url(./fonts/gilroy/Gilroy-Bold.otf);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#page1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#nav {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    top: -10%;
+}
+
+#nr {
+    width: 20%;
+    display: flex;
+}
+
+#nr button {
+    padding: 10px 20px;
+    background-color: transparent;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 1px solid #7b9250;
+    font-size: 15px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #5B6647;
+}
+
+#nr button:nth-child(2) {
+    background-color: #5B6647;
+    color: #fff;
+}
+
+.line {
+    padding: 20px 30px;
+    color: #5B6647;
+    border: none;
+    border-radius: 20px;
+    margin-left: 40px;
+    font-size: 40px;
+    line-height: 10px;
+    position: relative;
+
+}
+
+
+#line {
+    margin-bottom: 5px;
+    width: 50px;
+    height: 3px;
+    background-color: #5B6647;
+}
+
+#nav svg {
+    scale: 0.2;
+    fill: #454d35;
+    position: absolute;
+    z-index: 99;
+    opacity: 1;
+    top: -100px;
+}
+
+#page2 {
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    background-color: #5B6647;
+}
+
+#back svg {
+    height: 90vh;
+}
+
+#page2 #text2 {
+    padding-top: 80px;
+    position: absolute;
+    z-index: 99;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #454d35;
+    font-family: "2";
+}
+
+#below2 {
+    height: 20%;
+    width: 100%;
+    position: relative;
+}
+
+#below2 svg {
+    position: absolute;
+    width: 250vw;
+    overflow-x: auto;
+}
+
+#svg1 {
+    fill: #E3E3C4;
+    top: 40px;
+}
+
+#svg2 {
+    fill: #5B6647;
+}
+
+#page3 {
+    position: relative;
+    height: 200vh;
+    width: 100vw;
+    background-color: #F7F7EE;
+}
+
+#page3 #text2 h2 {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    color: #E3E3C4;
+    font-family: "2";
+    font-weight: 500;
+}
+
+#p {
+    width: 24vw;
+    height: 30vh;
+    top: 40%;
+    left: 10%;
+    font-size: 15px;
+    font-family: Gilroy;
+    color: #5B6647;
+
+}
+
+#text3 {
+    margin-top: 100px;
+    padding: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#text3 span {
+    font-size: 30px;
+
+}
+
+#text3 button {
+    padding: 4px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5B6647;
+    color: #E3E3C4;
+    font-weight: 600;
+}
+
+.img3 {
+
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#img1 {
+    margin-left: 20vw;
+    border-radius: 30px;
+    width: 45vw;
+    height: 60vh;
+}
+
+#img2 {
+    border-radius: 30px;
+    width: 42vw;
+    height: 55vh;
+    margin-top: 10vh;
+}
+
+#img3 {
+
+    margin: 2vw 20vw;
+    border-radius: 30px;
+    width: 15vw;
+    height: 30vh;
+}
+
+#page4 {
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    background-color: #F7F7EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hoverbox {
+    height: 20vh;
+    width: 90vw;
+    border: 1px solid #91a272;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hoverbox:nth-child(-n+4) {
+    border-bottom: none;
+}
+
+.hoverbox:nth-child(1) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hoverbox:nth-child(5) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hoverbox #text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hoverbox #text h1 {
+    font-family: PP woodland;
+    color: #5B6647;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-left: 40px;
+
+}
+
+.hoverbox #text h2 {
+    position: relative;
+    font-family: Gilroy;
+    background-color: #5B6647;
+    color: #E3E3C4;
+    margin-right: 4vw;
+    margin-top: 3vw;
+    padding: 4px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+
+}
+
+.hoverbox #text h2 i {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    color: #5B6647;
+    font-size: 15px;
+    opacity: 0;
+    padding: 6px 15px;
+    background-color: #fff;
+
+}
+
+.hoverbox #text span {
+    font-family: Gilroy;
+    font-size: 18px;
+    height: 50%;
+}
+
+.hoverbox img {
+    height: 100%;
+    width: 25%;
+    object-fit: cover;
+    position: absolute;
+    left: 0%;
+    transform: translate(-100%);
+}
+
+.hoverbox:hover #text {
+    width: 75%;
+    background-color: #5B6647;
+    transition: all ease .5s;
+}
+
+.hoverbox:hover #text h1 {
+    color: #E3E3C4;
+}
+
+.hoverbox:hover #text h2 i {
+    opacity: 1;
+}
+
+.hoverbox:hover img {
+    transform: translateX(0%);
+    transition: all ease .5s;
+}
+
+#page5 {
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    background-color: #F7F7EE;
+    padding-bottom: 20vh;
+
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 25px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5vw;
+    background-color: transparent;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    object-position: bottom;
+    transition: all ease-in-out 1s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: center;
+    transform: scale(0.6) translateX(-20vw) translateY(27vh);
+}
+
+.swiper-slide:nth-child(n) {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(4n) {
+    width: 20%;
+}
+
+.swiper-slide-active img {
+    transform: scale(1) translateX(0vw) translateY(0vh);
+    padding: 0px;
+}
+
+.swiper-button-next::after {
+    content: "";
+}
+
+.swiper-button-next {
+    padding: 0px 30px;
+    background-color: #5B6647;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    top: 5vh;
+    right: 5vw;
+}
+
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-button-prev {
+    padding: 0 30px;
+    background-color: #5B6647;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    top: 5vh;
+    left: 84vw;
+}
+
+.swiper-pagination {
+    top: 4vh;
+    left: 88vw;
+    width: 3vw;
+    height: 1vh;
+    font-size: 15px;
+    font-family: Gilroy;
+    color: #5B6647;
+}
+
+#page6 {
+    position: relative;
+    height: 200vh;
+    width: 100vw;
+    background-color: #03364F;
+}
+
+#page6 #top6 {
+    height: 11%;
+    width: 100%;
+    position: relative;
+    top: -10%;
+    rotate: 180deg;
+
+}
+
+#page6 #top6 svg {
+    position: absolute;
+    width: 200vw;
+    overflow-x: auto;
+    left: -10vw;
+}
+
+#svg3 {
+    fill: #E3E3C4;
+    top: 30px;
+    left: 10vw;
+}
+
+#svg4 {
+    fill: #03364F;
+}
+
+#page6 #text2 h2 {
+    height: 10%;
+
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    color: #03364F;
+    font-family: "2";
+    font-weight: 500;
+}
+
+#page6 #mainp {
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    top: 26%;
+    left: 35%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Gilroy;
+    color: #E3E3C4;
+}
+
+#page6 #img6 {
+    margin-top: 12vw;
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+#left6 {
+    width: 40%;
+    height: 100%;
+}
+
+#right6 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.lefttext {
+    width: 80%;
+    height: 90%;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.lefttext img {
+    width: 23vw;
+    height: 29vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.lefttext h1 {
+    margin: 20px 10px;
+    font-size: 40px;
+    font-family: PP woodland;
+    color: #E3E3C4;
+}
+
+.lefttext p {
+    font-family: Gilroy;
+    font-size: 14px;
+    width: 100%;
+    color: #E3E3C4;
+}
+
+#right6 .lefttext:nth-child(1) {
+    margin-top: 200px;
+    padding: 0;
+}
+
+#right6 h2 {
+    font-style: 40px;
+    color: #E3E3C4;
+    font-family: Gilroy;
+    position: absolute;
+    top: 80%;
+    font-weight: 600;
+}
+
+#right6 h2 i {
+    margin-left: 20px;
+    background-color: #E3E3C4;
+    color: #03364F;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#page7 {
+    width: 100vw;
+    height: 220vh;
+    position: relative;
+    background-color: #F7F7EE;
+}
+
+#page7 #top6 {
+    height: 11%;
+    width: 100%;
+    position: relative;
+
+}
+
+#page7 #top6 svg {
+    position: absolute;
+    width: 250vw;
+    overflow-x: auto;
+}
+
+#svg5 {
+    fill: #E3E3C4;
+    top: 30px;
+}
+
+#svg6 {
+    fill: #03364F;
+}
+
+#page7 #text2 {
+    padding-top: 180px;
+}
+
+#page7 #text2 h2 {
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 90px;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    color: #deded9;
+    font-family: PP woodland;
+}
+
+#center7 {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: wrap;
+
+}
+
+#left7 {
+    width: 48%;
+    height: 85%;
+    display: inline-block;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/230/ALH_Odisej_outsidepool_01-scaled-480x0.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    z-index: 99;
+}
+
+#mid7 {
+    height: 85%;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 0;
+    opacity: 0;
+}
+
+#right7 {
+    width: 48%;
+    border-radius: 20px;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/388/alh-img-2-480x0.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 85%;
+    display: inline-block;
+    z-index: 99;
+}
+
+#mid7 h1 {
+    font-size: 80px;
+    font-weight: 500;
+    font-family: pp woodland;
+    color: #5B6647;
+}
+
+#mid7 p {
+    margin: 50px 170px;
+    font-style: 40px;
+    color: #5B6647;
+    font-family: Gilroy;
+    width: 50%;
+}
+
+#mid7 h2 {
+    font-style: 40px;
+    color: #5B6647;
+    font-family: Gilroy;
+    position: absolute;
+    top: 80%;
+    font-weight: 600;
+    left: 30%;
+}
+
+#mid7 h2 i {
+    margin-left: 20px;
+    background-color: #5B6647;
+    color: #deded9;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#page8 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/394/ALH-Odisej-Lakes-1920x0.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#page9 {
+    width: 100vw;
+    height: 200vh;
+    background-color: #5B6647;
+    position: relative;
+}
+
+#page9 #top6 {
+    height: 11%;
+    width: 100%;
+    position: relative;
+    top: -10%;
+    rotate: 180deg;
+
+}
+
+#page9 #text2 {
+    width: 100%;
+    height: 89%;
+    position: absolute;
+    text-align: center;
+}
+
+#svg9 {
+    width: 100vw;
+    height: 100%;
+    padding-top: 7%;
+}
+
+#page9 #top6 svg {
+    position: absolute;
+    width: 250vw;
+    overflow-x: auto;
+    left: 5vw;
+}
+
+#page9 #svg7 {
+    fill: #E3E3C4;
+    top: 30px;
+    left: 10vw;
+}
+
+#page9 #svg8 {
+    fill: #5B6647;
+}
+
+#page9 #text2 h2 {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    color: #454d35;
+    font-family: "2";
+    font-weight: 500;
+}
+
+#page9 #text2 p {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #E3E3C4;
+    font-family: Gilroy;
+    width: 100%;
+    font-weight: 600;
+}
+
+#page9 #text2 h1 {
+    font-size: 25px;
+    color: #E3E3C4;
+    font-family: Gilroy;
+    font-weight: 500;
+}
+
+#page9 #text2 h1 i {
+    margin: 15px 20px;
+    font-size: 16px;
+    background-color: #deded9;
+    color: #91a272;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#img9 {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 20px 100px;
+    gap: 20px;
+}
+
+#img9 img:nth-child(1) {
+    width: 30%;
+    height: 45%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: 42vh;
+}
+
+#img9 img:nth-child(2) {
+    width: 35%;
+    height: 90%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#img9 img:nth-child(3) {
+    width: 30%;
+    height: 45%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#page10 {
+    width: 100vw;
+    height: 220vh;
+    background-color: #F7F7EE;
+    position: relative;
+}
+
+#page10 #top10 {
+    height: 20%;
+    width: 100%;
+    padding-top: 20vh;
+}
+
+#top10 h1 {
+    color: #434B34;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 500;
+    font-family: PP woodland;
+}
+
+#top10 p {
+    color: #434B34;
+    width: 100%;
+    margin: 5vh 0;
+    font-size: 15px;
+    text-align: center;
+    font-family: Gilroy;
+}
+
+.box10 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box10 img {
+    width: 40vw;
+    height: 75vh;
+    border-radius: 20px;
+}
+
+.box10 #text {
+    width: 20%;
+    height: 30%;
+}
+
+.box10 #text h1 {
+    color: #434B34;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: PP woodland;
+}
+
+.box10 #text p {
+    color: #434B34;
+    width: 100%;
+    margin: 2vh 0;
+    font-size: 15px;
+    font-family: Gilroy;
+}
+
+.box10 #text h2 {
+    font-family: Gilroy;
+    font-size: 35px;
+    font-weight: 500;
+    color: #5B6647;
+    padding-top: 5vh;
+}
+
+.box10 #text h2 i {
+    margin: 15px 20px;
+    font-size: 16px;
+    background-color: #5B6647;
+    color: #E3E3C4;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#top11 {
+    width: 90%;
+    height: 28%;
+    border-radius: 20px;
+    background-color: #5B6647;
+    position: absolute;
+    bottom: 12vh;
+    left: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+#page11 {
+    width: 100vw;
+    height: 90vh;
+    background-color: #03364F;
+    position: relative;
+    overflow: hidden;
+}
+
+#top11 h1 {
+    color: #E3E3C4;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: PP woodland;
+}
+
+#top11 h2 {
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 500;
+    color: #F7F7EE;
+    padding-top: 5vh;
+}
+
+#top11 h2 i {
+    margin: 15px 20px;
+    font-size: 16px;
+    background-color: #F7F7EE;
+    color: #5B6647;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+#content11 {
+    position: absolute;
+    z-index: 99;
+    padding-top: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box11 {
+    width: 90%;
+    height: 30%;
+    border-bottom: 1px solid #06547b;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vh;
+}
+
+.box11 #topb {
+    padding-top: 2vh;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box11 #bottomb {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topb img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#topb svg {
+    height: 60%;
+}
+
+#content11 h1 {
+    text-align: center;
+    width: 22%;
+    height: 10%;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    color: #E3E3C4;
+}
+
+#GO {
+    width: 20%;
+}
+
+.box11:nth-child(3) {
+    border: none;
+}
+
+#content11 h2 {
+    font-family: Gilroy;
+    color: #dadada;
+    font-size: 16px;
+    padding-top: 12vh;
+}
