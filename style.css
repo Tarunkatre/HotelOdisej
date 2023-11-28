@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: "2";
-    src: url(./fonts/PPWoodland-Regular.ttf);
+    src: url(./fonts/PPWoodland-Regular.woff2);
 }
 
 @font-face {
     font-family: "1";
-    src: url(./fonts/gilroy/Gilroy-Bold.otf);
+    src: url(./fonts/gilroy/Gilroy-Regular.woff2);
 }
 
 html,
@@ -60,7 +60,7 @@ body {
     border-radius: 50px;
     border: 1px solid #7b9250;
     font-size: 15px;
-    font-family: gilroy;
+    font-family: '1';
     font-weight: 500;
     color: #5B6647;
 }
@@ -166,7 +166,7 @@ body {
     top: 40%;
     left: 10%;
     font-size: 15px;
-    font-family: Gilroy;
+    font-family: '1';
     color: #5B6647;
 
 }
@@ -269,7 +269,7 @@ body {
 }
 
 .hoverbox #text h1 {
-    font-family: PP woodland;
+    font-family: '2';
     color: #5B6647;
     font-size: 40px;
     font-weight: 500;
@@ -280,7 +280,7 @@ body {
 
 .hoverbox #text h2 {
     position: relative;
-    font-family: Gilroy;
+    font-family: '1';
     background-color: #5B6647;
     color: #E3E3C4;
     margin-right: 4vw;
@@ -306,7 +306,7 @@ body {
 }
 
 .hoverbox #text span {
-    font-family: Gilroy;
+    font-family: '1';
     font-size: 18px;
     height: 50%;
 }
@@ -437,7 +437,7 @@ body {
     width: 3vw;
     height: 1vh;
     font-size: 15px;
-    font-family: Gilroy;
+    font-family: '1';
     color: #5B6647;
 }
 
@@ -494,7 +494,7 @@ body {
     text-align: center;
     font-size: 15px;
     letter-spacing: 1px;
-    font-family: Gilroy;
+    font-family: '1';
     color: #E3E3C4;
 }
 
@@ -533,12 +533,12 @@ body {
 .lefttext h1 {
     margin: 20px 10px;
     font-size: 40px;
-    font-family: PP woodland;
+    font-family: '2';
     color: #E3E3C4;
 }
 
 .lefttext p {
-    font-family: Gilroy;
+    font-family: '1';
     font-size: 14px;
     width: 100%;
     color: #E3E3C4;
@@ -552,7 +552,7 @@ body {
 #right6 h2 {
     font-style: 40px;
     color: #E3E3C4;
-    font-family: Gilroy;
+    font-family: '1';
     position: absolute;
     top: 80%;
     font-weight: 600;
@@ -608,7 +608,7 @@ body {
     text-align: center;
     font-size: 80px;
     color: #deded9;
-    font-family: PP woodland;
+    font-family: '2';
 }
 
 #center7 {
@@ -659,7 +659,7 @@ body {
 #mid7 h1 {
     font-size: 80px;
     font-weight: 500;
-    font-family: pp woodland;
+    font-family: '2';
     color: #5B6647;
 }
 
@@ -667,14 +667,14 @@ body {
     margin: 50px 170px;
     font-style: 40px;
     color: #5B6647;
-    font-family: Gilroy;
+    font-family: '1';
     width: 50%;
 }
 
 #mid7 h2 {
     font-style: 40px;
     color: #5B6647;
-    font-family: Gilroy;
+    font-family: '1';
     position: absolute;
     top: 80%;
     font-weight: 600;
@@ -758,7 +758,7 @@ body {
     margin-top: 50px;
     font-size: 18px;
     color: #E3E3C4;
-    font-family: Gilroy;
+    font-family: '1';
     width: 100%;
     font-weight: 600;
 }
@@ -766,7 +766,7 @@ body {
 #page9 #text2 h1 {
     font-size: 25px;
     color: #E3E3C4;
-    font-family: Gilroy;
+    font-family: '1';
     font-weight: 500;
 }
 
@@ -828,7 +828,7 @@ body {
     font-size: 90px;
     text-align: center;
     font-weight: 500;
-    font-family: PP woodland;
+    font-family: '2';
 }
 
 #top10 p {
@@ -837,7 +837,7 @@ body {
     margin: 5vh 0;
     font-size: 15px;
     text-align: center;
-    font-family: Gilroy;
+    font-family: '1';
 }
 
 .box10 {
@@ -863,7 +863,7 @@ body {
     color: #434B34;
     font-size: 40px;
     font-weight: 500;
-    font-family: PP woodland;
+    font-family: '2';
 }
 
 .box10 #text p {
@@ -871,11 +871,11 @@ body {
     width: 100%;
     margin: 2vh 0;
     font-size: 15px;
-    font-family: Gilroy;
+    font-family: '1';
 }
 
 .box10 #text h2 {
-    font-family: Gilroy;
+    font-family: '1';
     font-size: 35px;
     font-weight: 500;
     color: #5B6647;
@@ -917,11 +917,11 @@ body {
     color: #E3E3C4;
     font-size: 60px;
     font-weight: 500;
-    font-family: PP woodland;
+    font-family: '2';
 }
 
 #top11 h2 {
-    font-family: Gilroy;
+    font-family: '1';
     font-size: 25px;
     font-weight: 500;
     color: #F7F7EE;
@@ -986,7 +986,7 @@ body {
     text-align: center;
     width: 22%;
     height: 10%;
-    font-family: Gilroy;
+    font-family: '1';
     font-size: 18px;
     font-weight: 500;
     color: #E3E3C4;
@@ -1001,7 +1001,7 @@ body {
 }
 
 #content11 h2 {
-    font-family: Gilroy;
+    font-family: '1';
     color: #dadada;
     font-size: 16px;
     padding-top: 12vh;
